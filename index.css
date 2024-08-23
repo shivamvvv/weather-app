@@ -129,10 +129,15 @@ nav .controls .search-input input {
   display: flex;
   gap: 1rem;
   flex-direction: column;
+  background-image: url(public/assests/sky-clouds.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .map {
   background-color: #c7c7c7;
   flex: 1;
+  background-image: url(public/assests/world\ map.webp);
+  background-size: contain;
 }
 .row > div {
   border-radius: 1.6rem;
@@ -213,4 +218,229 @@ nav .controls .search-input input {
 
 .degree p:last-child {
   color: #717689;
+}
+.details {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 1.5rem 0;
+  gap: 1rem;
+}
+.place-temp {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  gap: 1rem;
+}
+.time-temp {
+  background-color: #ffffff;
+  flex: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.current-place-temp {
+  background-color: #dff296;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.place-temp .place-text {
+  flex: 1;
+  padding-left: 0.5rem;
+}
+
+.place-temp .place-text p:first-child {
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+  color: #3d4961;
+}
+
+.place-temp .place-text p:last-child {
+  font-weight: 300;
+  color: #9a9ca6;
+}
+
+.place-temp .temp {
+  color: #ff8118;
+}
+.place-temp .nearby-place-temp {
+  display: flex;
+  flex-direction: row;
+  border-radius: 1rem;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1rem 0.1rem 1rem;
+  background-color: #f7f7f7;
+}
+
+.place-temp iframe {
+  border: none;
+  margin-top: 1rem;
+}
+
+.air-quality {
+  background-color: #19283f;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1.5rem;
+}
+
+.air-quality-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.air-quality p {
+  white-space: nowrap;
+  color: #f2f2f2;
+}
+
+.air-quality p:last-child {
+  font-weight: 200;
+}
+
+.air-quality p:first-child {
+  font-size: 1.5rem;
+}
+
+.current-place-temp .current-place p:first-child {
+  font-weight: 400;
+  color: #9a9ca6;
+}
+
+.current-place-temp .current-place p:last-child {
+  font-weight: 600;
+  color: #19283f;
+  font-size: 2rem;
+}
+
+.current-place-temp .temp-icon p:first-child {
+  font-weight: 600;
+  color: #19283f;
+  font-size: 2rem;
+}
+
+.current-place-temp .temp-icon p:last-child {
+  font-weight: 400;
+  color: #9a9ca6;
+}
+
+.time-temp .temp-today {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time-temp .temp-today .temp-today-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.time-temp .temp-today .temp-today-icon button {
+  border: none;
+  padding: 0.6rem;
+  height: fit-content;
+  border-radius: 0.5rem;
+}
+
+.time-temp .temp-today .temp-today-icon {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.time-temp .temp-today .temp-today-icon button:first-child {
+  color: #f2f2f2;
+  background-color: #ff8118;
+}
+
+.time-temp .icon-illustrations-temp {
+  display: flex;
+  height: 100%;
+}
+.glow {
+  box-shadow: rgba(223, 145, 43, 0.25) 0px 54px 55px,
+    rgba(223, 145, 43, 0.12) 0px -12px 30px,
+    rgba(223, 145, 43, 0.12) 0px 4px 6px, rgba(223, 145, 43, 0.17) 0px 12px 13px,
+    rgba(223, 145, 43, 0.09) 0px -3px 5px;
+}
+.timeline-item {
+  text-align: center;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.timeline-item:nth-child(2) {
+  text-align: center;
+  border-left: solid 1px #c7c7c7;
+  border-right: solid 1px #c7c7c7;
+  flex: 1;
+}
+.timeline-item:nth-child(3) {
+  text-align: center;
+  flex: 1;
+  border-right: solid 1px #c7c7c7;
+}
+
+.timeline-item p:first-child {
+  font-weight: 600;
+}
+
+.timeline-item p:last-child {
+  font-weight: 400;
+  color: #9a9ca6;
+}
+
+.allMapButtons {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  height: 100%;
+  justify-content: space-between;
+  width: fit-content;
+}
+
+.allMapButtons button {
+  border: none;
+  padding: 0.6rem;
+  height: fit-content;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: fit-content;
+}
+
+.restOfIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.restOfIcons .zoomInOut {
+  display: flex;
+  flex-direction: column;
+}
+.restOfIcons .zoomInOut button {
+  background-color: #f97f29;
+  color: #fff;
+}
+.restOfIcons .zoomInOut button:first-child {
+  border-radius: 50% 50% 0 0;
+}
+
+.restOfIcons .zoomInOut button:last-child {
+  border-radius: 0 0 50% 50%;
+}
+
+.allMapButtons .fullScreen button {
+  background-color: #cce16a;
 }
